@@ -1,0 +1,13 @@
+{
+    "moduleFileExtensions": ["js", "json", "ts", "tsx"],
+    "rootDir": "../app",
+    "testEnvironment": "./test/fix-jsdom.ts",
+    "testRegex": ".spec.tsx$",
+    "transform": {
+        "^.+\\.(t|j)(s|sx)$": "ts-jest"
+    },
+    "setupFilesAfterEnv": ["<rootDir>/test/jest-setup.ts"],
+    "moduleNameMapper": {
+        "^test-utils$": "<rootDir>/test/utils/index.ts"
+    }
+}
